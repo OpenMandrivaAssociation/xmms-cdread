@@ -13,6 +13,7 @@ Patch1:	xmms-cdread-0.14a-shuffle_list.patch
 License: GPL
 Group: Sound
 Requires: xmms
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: xmms-devel
 
 %description
