@@ -1,6 +1,6 @@
 %define name xmms-cdread
 %define version 0.14a
-%define release %mkrel 7
+%define release %mkrel 8
 
 Name: %{name}
 Summary: Input plugin that reads audio data from CDs
