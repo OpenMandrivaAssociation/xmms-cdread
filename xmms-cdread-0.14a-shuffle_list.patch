@@ -1,0 +1,22 @@
+--- xmms-cdread-0.14a/playlist.h~	1999-10-11 05:42:53.000000000 -0400
++++ xmms-cdread-0.14a/playlist.h	2003-10-18 22:04:49.000000000 -0400
+@@ -54,7 +54,7 @@
+ gboolean playlist_load(gchar * filename);
+ guint playlist_load_ins(gchar * filename, glong pos);
+ GList *get_playlist(void);
+-void playlist_generate_shuffle_list(void);
++/*void playlist_generate_shuffle_list(void);*/
+ void playlist_start_get_info_thread(void);
+ void playlist_stop_get_info_thread();
+ void playlist_start_get_info_scan(void);
+--- xmms-cdread-0.14a/playlist.c~	2001-06-03 12:58:51.000000000 -0400
++++ xmms-cdread-0.14a/playlist.c	2003-10-18 22:04:11.000000000 -0400
+@@ -161,7 +161,7 @@
+ 	pthread_mutex_unlock(&playlist_mutex);
+ 	
+ 	playlistwin_update_list();
+-	if (regen_shuffle) playlist_generate_shuffle_list();
++	/*if (regen_shuffle) playlist_generate_shuffle_list();*/
+ 	if (set_info_text) mainwin_set_info_text();
+ 	if (restart_playing)
+ 	{

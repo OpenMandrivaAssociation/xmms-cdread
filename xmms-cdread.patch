@@ -1,0 +1,11 @@
+--- xmms-cdread-0.9a/cdread.c.orig	Tue Nov  7 16:51:49 2000
++++ xmms-cdread-0.9a/cdread.c	Tue Nov  7 16:52:14 2000
+@@ -348,7 +348,7 @@
+ }
+ 
+ void
+-_fini(void)
++cd_fini(void)
+ {
+ 	CD_LOCK();
+ 	while (cd_list)
